@@ -1,0 +1,29 @@
+#1
+1
+
+git init
+git status
+git add .
+git commit -m "Initialize project with index.html".
+
+2
+
+git status
+git log
+
+3
+
+git add . 
+git commit -m "Add hello message to index.html"
+git log --oneline
+
+#2
+
+1.
+git switch -c "feature/navigation"
+git add .
+git commit -m "Adding navigation bar function"
+2.
+git switch main
+git merge feature/navigation
+git branch -D feature/navigation
