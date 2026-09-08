@@ -23,7 +23,23 @@ git log --oneline
 git switch -c "feature/navigation"
 git add .
 git commit -m "Adding navigation bar function"
+
 2.
 git switch main
 git merge feature/navigation
 git branch -D feature/navigation
+
+3.
+git switch -c feature/header
+git add .
+git commit -m "Adding footer"
+git switch main
+git add .
+git commit -m "Adding footerV2"
+git merge feature/header
+git add .
+git commit -m "Merging with feature/header"
+
+#3
+
+git remote add origin https://github.com/Ngab-Rainbow/my-web-app.git
